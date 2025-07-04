@@ -173,7 +173,7 @@ Here is what our full Tines workflow looks like:
 
 ![alt_text](FullTines.jpg)
 
-### Part 5: Simulating the Event and Seeing If Everything Works
+### Part 5: A Full Simulation to Check Functionality
 
 Since we have completed our Tines workflow based on our playbook, lets see if everything runs properly!
 
@@ -181,7 +181,7 @@ I have screenrecorded both a command line of the endpoint device and what a memb
 
 View of the endpoint (If "Yes" is chosen):
 
-![alt_text](HostView.mp4)
+![alt_text]([HostView.mp4](https://github.com/44yyyy/SOAR-EDR-Project/blob/main/HostView.mp4))
 
 View of the respondent (If "Yes" is chosen):
 
