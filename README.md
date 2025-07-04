@@ -181,11 +181,11 @@ I have screenrecorded both a command line of the endpoint device and what a memb
 
 View of the endpoint (If "Yes" is chosen):
 
-![alt_text]([HostView.mp4](https://github.com/44yyyy/SOAR-EDR-Project/blob/main/HostView.mp4))
+https://github.com/user-attachments/assets/d16550f1-6b0f-484e-809c-a3811796f284
 
 View of the respondent (If "Yes" is chosen):
 
-![alt_text](YesResponseView.mp4)
+https://github.com/user-attachments/assets/029648fe-23d9-4ce1-818f-e37869004ba8
 
 As we can see from the videos, everything works perfectly! 
 
@@ -201,9 +201,22 @@ Finally, the confirmation message was sent to Slack after the isolation. Great!
 
 For the "No" path, here is now it looks:
 
-![alt_text](NoResponseView.mp4)
+https://github.com/user-attachments/assets/15adaa6d-1e46-476d-a812-e9d9e65209f6
 
 We do not need to consider the ping and the isolation status because we will not be isolating the device, but we can see that the Slack message prompting further investigation has been sent.
+
+## Conclusion
+
+Coming into this project, my knowledge of EDR and SOAR technologies was largely theoretical, coming from studying for courses and certifications. Actually getting to implement these systems, connect them through APIs, and design a complete workflow from detection to response was both eye-opening and incredibly rewarding. I was able to bridge the gap between abstract concepts and real-world application, and acquire a deeper appreciation for how modern security operations function. This project bolstered my enthusiasm for cybersecurity and desire to keep learning through hands-on experiences, and I definitely will be doing more projects like these. Thank you for reading!
+
+## Contact
+
+Email: <johnyang4406@gmail.com>, <john_s_yang@brown.edu>
+
+LinkedIn: <https://www.linkedin.com/in/john-yang-747726292/>
+
+
+
 
 
 
