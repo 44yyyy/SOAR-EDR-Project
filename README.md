@@ -63,7 +63,21 @@ Detection: ![alt text](Detect.jpg)
 
 Response: ![alt text](Response.jpg)
 
-Let's test this out. If we run LaZagne on our device, a detection should pop up on our LimaCharile client.
+Let's test this out. Since we established our detection parameters, if we run LaZagne on our device, a detection should pop up on our LimaCharile client.
 
-![alt text](LaZagne-Run.jpg)
+![alt text](LaZagneRun.jpg)
+
+Lets run LaZagne!
+
+![alt_text](Detected.jpg)
+
+And voila, we caught it!
+
+### Part 3: Setting up Tines
+
+Since we have our detections set up, we need to forward any detections made on LimaCharlie to Tines, a SOAR platform, so that we can automate the remaining tasks on our playbook.
+
+Sign up for an account on https://www.tines.com/
+
+
 
