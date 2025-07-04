@@ -33,7 +33,7 @@ If malicious software was detected by LimaCharlie, LimaCharlie will alert Tines,
 
 Navigate to https://app.limacharlie.io, create an account, and download LimaCharlie on a device of your choosing. It could be an old computer, or a virtual machine. 
 
-After the download is complete, run the executable to set up the LimaCharlie agent.
+After the download is complete, run the executable with the to set up the LimaCharlie agent.
 
 ![alt text](Installed.jpg)
 
