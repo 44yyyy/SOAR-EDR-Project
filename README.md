@@ -89,9 +89,19 @@ After dragging the webhook on the interface, copy the Webhook URL, navigate to t
 
 ![alt_text](OutputLC.jpg)
 
-Now our LimaCharlie and Tines should be connected.
+Now, our LimaCharlie and Tines should be connected.
 
-Then, we need to implement the messaging part of our playbook.
+To test the connection, run LaZagne on the endpoint device and see if there is an event generated on the webhook.
+
+![alt_text](TinesDetected.jpg)
+
+Here we see that the information from LimaCharlie's detection tab has been forwarded exactly to Tines. Nice!
+
+For reference, this is how it looks on LimaCharlie:
+
+
+
+Now, we need to implement the messaging part of our playbook.
 
 We can use a Tines templates for sending messages through Slack and Email and connect it to our webhook.
 
@@ -106,6 +116,14 @@ For the automated email, simply insert which email address/addresses you want to
 ![alt_text](FirstTines.jpg)
 
 So far, this is how our workflow looks. If webhook receives a detection from LimaCharlie, Tines will automatically send an alert message to Slack and Email.
+
+Now, we need to implement the user prompt part of our playbook on Tines. We can do this by utilizing the Page editing tool on Tines.
+
+This is how our user prompt page will look:
+
+![alt_text](UserPrompt.jpg)
+
+On the editing tool, add a header for the title, a text bar that contains the paths to the message details that we specified in the playbook (the paths can be seen after generating an event 
 
 
 
