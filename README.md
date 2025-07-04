@@ -77,7 +77,13 @@ And voila, we caught it!
 
 Since we have our detections set up, we need to forward any detections made on LimaCharlie to Tines, a SOAR platform, so that we can automate the remaining tasks on our playbook.
 
-Sign up for an account on https://www.tines.com/
+Sign up for an account on https://www.tines.com/.
+
+After we load our first Tines story, we'll see this interface.
+
+
+
+
 
 
 
