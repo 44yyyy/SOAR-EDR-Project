@@ -2,7 +2,7 @@
 
 ## Objective
 
-This SOAR-EDR Integration project was designed to demonstrate the orchestration of automated security workflows using LimaCharlie (EDR) and Tines (SOAR). The primary objective was to configure and link these platforms to simulate real-time threat detection, response, and remediation. By automating actions such as alerting through communication platforms and endpoint containment, the project highlights the operational benefits of integrating detection and response tools. This hands-on implementation deepened practical understanding of modern incident response, threat intelligence integration, and the role of automation in scaling security operations.
+This project was designed to demonstrate the orchestration of automated security workflows using LimaCharlie (Endpoint Detection and Response) and Tines (Security Orchestration, Automation, and Response). The primary objective was to configure and link these platforms to simulate real-time threat detection, response, and remediation. By automating actions such as alerting through communication platforms and endpoint containment, the project highlights the operational benefits of integrating detection and response tools. This hands-on implementation deepened practical understanding of modern incident response, threat intelligence integration, and the role of automation in scaling security operations.
 
 ### Skills Learned
 
