@@ -65,5 +65,5 @@ Response: ![alt text](Response.jpg)
 
 Let's test this out. If we run LaZagne on our device, a detection should pop up on our LimaCharile client.
 
-![alt text](.jpg)
+![alt text](LaZagne-Run.jpg)
 
