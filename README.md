@@ -93,13 +93,15 @@ Now, our LimaCharlie and Tines should be connected.
 
 To test the connection, run LaZagne on the endpoint device and see if there is an event generated on the webhook.
 
+On LimaCharlie, the detection details looks like this:
+
+![alt_text](LimaDetection.jpg)
+
+And now navigating to Tines,
+
 ![alt_text](TinesDetected.jpg)
 
 Here we see that the information from LimaCharlie's detection tab has been forwarded exactly to Tines. Nice!
-
-For reference, this is how it looks on LimaCharlie:
-
-
 
 Now, we need to implement the messaging part of our playbook.
 
@@ -113,6 +115,12 @@ Our slack is now set up.
 
 For the automated email, simply insert which email address/addresses you want to alert.
 
+For the contents of the alert messages, follow the message details we outlined in the playbook.
+
+![alt_text](RealMessage.jpg)
+
+The details can be taken directly from the event details (Detection) that our webhook receives as a path, as we can see above.
+
 ![alt_text](FirstTines.jpg)
 
 So far, this is how our workflow looks. If webhook receives a detection from LimaCharlie, Tines will automatically send an alert message to Slack and Email.
@@ -123,7 +131,82 @@ This is how our user prompt page will look:
 
 ![alt_text](UserPrompt.jpg)
 
-On the editing tool, add a header for the title, a text bar that contains the paths to the message details that we specified in the playbook (the paths can be seen after generating an event 
+On the editing tool, add a header for the title, a text bar that contains the paths to the message details that we specified, a boolean for the Y/N choice, and finally a button to submit the response.
+
+Now, all we have left is to set up the "Yes" and "No" paths based on our playbook.
+
+We can use the "Trigger" tool located on the left bar of Tines, which will trigger the following action based on the boolean chosen by the user on the prompt. 
+
+Let's implement the "Yes" path first. Prior to doing this, we need to set up a credential on Tines using LimaCharlie's API key. 
+
+Navigate to "Access Management" then click on "REST API", and copy the "Org JWT".
+
+![alt_text](API.jpg)
+
+After doing this, add a Text credential on Tines (on the right side) and paste the Org JWT on the "Value" section.
+
+![alt_text](TinesCredential.jpg)
+
+Tines should now have access to automate actions on LimaCharlie.
+
+Returning back to the "Yes" path, we first want to isolate the computer that LaZagne was deployed on. We can do this by dragging a LimaCharlie template on Tines named "Isolate Sensor".
+
+The URL section of the template will look like this:
+
+![alt_text](Isolate.jpg)
+
+We can take the Sensor ID logged on our webhook event to have LimaCharlie isolate the computer on that specific sensor.
+
+After the computer has been isolated, we will send a confirmation message to Slack that looks like this:
+
+![alt_text](Yesmsg.jpg)
+
+We can simply add another Slack message template on Tines to accomplish this.
+
+That finishes the "Yes" path!
+
+And finally, for the "No" path, all we need to do is add one more Slack message template, and write another message that reads:
+
+![alt_text](NoMsg.jpg)
+
+Here is what our full Tines workflow looks like:
+
+![alt_text](FullTines.jpg)
+
+### Part 5: Simulating the Event and Seeing If Everything Works
+
+Since we have completed our Tines workflow based on our playbook, lets see if everything runs properly!
+
+I have screenrecorded both a command line of the endpoint device and what a member responding to the event will see (on another device).
+
+View of the endpoint (If "Yes" is chosen):
+
+![alt_text](HostView.mp4)
+
+View of the respondent (If "Yes" is chosen):
+
+![alt_text](YesResponseView.mp4)
+
+As we can see from the videos, everything works perfectly! 
+
+When LaZagne was ran on our endpoint, we can see that a detection rolled in on LimaCharlie (respondent view).
+
+The webhook brought in the event into Tines, the Slack message and Email was sent properly.
+
+To check if the automated isolation worked, I continously ping 8.8.8.8 on the endpoint device.
+
+After accessing the user prompt page based on the recent event and answering "Yes", we can see the ping that worked suddenly respond with "General Failure" starting from 1:08 of the Host recording, indicating that the device has been isolated from all network connections.
+
+Finally, the confirmation message was sent to Slack after the isolation. Great!
+
+For the "No" path, here is now it looks:
+
+![alt_text](NoResponseView.mp4)
+
+We do not need to consider the ping and the isolation status because we will not be isolating the device, but we can see that the Slack message prompting further investigation has been sent.
+
+
+
 
 
 
