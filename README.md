@@ -33,11 +33,15 @@ If malicious software was detected by LimaCharlie, LimaCharlie will alert Tines,
 
 Navigate to https://app.limacharlie.io, create an account, and download LimaCharlie on a device of your choosing. It could be an old computer, or a virtual machine. 
 
-After the download is complete, run the executable with the to set up the LimaCharlie agent.
+After the download is complete, run the executable along your installation key the to set up the LimaCharlie agent.
+
+![alt text](InstallationKey.jpg)
+
+The installation key should be located in the "Sensors" section.
 
 ![alt text](Installed.jpg)
 
-Done!
+Type in this command in PowerShell, and it should be done!
 
 ![alt text](Services.jpg)
 
@@ -49,7 +53,17 @@ After doing this, we should see a new sensor added to the sensor list on LimaCha
 
 ### Part 3: Detection and Response Rules in LimaCharlie
 
-For our simulated event, we will use a script called LaZagne. You can download it here: https://github.com/AlessandroZ/LaZagne
+For our simulated event, we will use an application called LaZagne. You can download it here: https://github.com/AlessandroZ/LaZagne
+
+Note that Windows Real-Time Detection should be turned off for the downloading of the executable.
 
 I created a set of detection and response rules so that LimaCharlie appropriately detects the execution of LaZagne on our endpoint device.
+
+Detection: ![alt text](Detect.jpg)
+
+Response: ![alt text](Response.jpg)
+
+Let's test this out. If we run LaZagne on our device, a detection should pop up on our LimaCharile client.
+
+![alt text](.jpg)
 
