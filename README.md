@@ -73,13 +73,43 @@ Lets run LaZagne!
 
 And voila, we caught it!
 
-### Part 3: Setting up Tines
+### Part 4: Link everything together with Tines
 
 Since we have our detections set up, we need to forward any detections made on LimaCharlie to Tines, a SOAR platform, so that we can automate the remaining tasks on our playbook.
 
 Sign up for an account on https://www.tines.com/.
 
 After we load our first Tines story, we'll see this interface.
+
+![alt_text](BlankTines.jpg)
+
+In order to bring our detections from LimaCharlie to Tines, we'll need to use a webhook. You can drag a webhook from the left bar of Tines.
+
+After dragging the webhook on the interface, copy the Webhook URL, navigate to the "Outputs" section on the LimaCharlie client, add a new output, and paste the URL into the "Destination" bar.
+
+![alt_text](OutputLC.jpg)
+
+Now our LimaCharlie and Tines should be connected.
+
+Then, we need to implement the messaging part of our playbook.
+
+We can use a Tines templates for sending messages through Slack and Email and connect it to our webhook.
+
+Note that we will need to authorize our Slack account with Tines, this can be done on the "Credentials" section on the right side of Tines.
+
+![alt_text](SlackConnection.jpg)
+
+Our slack is now set up.
+
+For the automated email, simply insert which email address/addresses you want to alert.
+
+![alt_text](FirstTines.jpg)
+
+So far, this is how our workflow looks. If webhook receives a detection from LimaCharlie, Tines will automatically send an alert message to Slack and Email.
+
+
+
+
 
 
 
