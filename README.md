@@ -207,7 +207,7 @@ We do not need to consider the ping and the isolation status because we will not
 
 ## Conclusion
 
-Coming into this project, my knowledge of EDR and SOAR technologies was largely theoretical, coming from studying for courses and certifications. Actually getting to implement these systems, connect them through APIs, and design a complete workflow from detection to response was both eye-opening and incredibly rewarding. I was able to bridge the gap between abstract concepts and real-world application, acquiring a deeper appreciation for how modern security operations function. This project bolstered my enthusiasm for cybersecurity and desire to keep learning through hands-on experiences, and I definitely will be doing more projects like these in the future. Thank you for reading!
+Coming into this project, my knowledge of EDR and SOAR technologies was largely theoretical, coming from studying for courses and certifications. Actually getting to implement these systems, along with connecting them through APIs and designing a complete workflow from detection to response, was really eye-opening and incredibly rewarding. Bridging the gap between abstract concepts and real-world application has now given me a deeper appreciation for how complicated modern security operations and their functions are. This project bolstered my enthusiasm for cybersecurity and desire to keep learning through hands-on experiences, and I definitely will be doing more projects like these in the future. Thank you for reading!
 
 ## Contact
 
