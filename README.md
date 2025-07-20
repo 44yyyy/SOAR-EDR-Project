@@ -23,7 +23,7 @@ This project was designed to demonstrate the orchestration of automated security
 
 ### Part 1: Making the Playbook
 
-Before implementation, it was essential to develop a diagram of a hypothetical Incident Response Playbook so that I could easily visualize the interactions between the computer, user, LimaCharlie, Tines, Slack, Email, and the security team. This diagram clarified the end-to-end workflow—from threat detection to automated response—and served as a blueprint for building the integration.
+Before implementation, it was essential to develop a diagram of a hypothetical Incident Response Playbook so that I could easily visualize the interactions between the computer, user, LimaCharlie, Tines, Slack, Email, and the security team. This diagram clarified the end-to-end workflow and served as a blueprint for future building.
 
 ![alt text](Playbook.jpg)
 
