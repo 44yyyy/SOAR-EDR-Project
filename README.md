@@ -2,7 +2,7 @@
 
 ## Objective
 
-This project was designed to demonstrate the orchestration of automated security workflows using LimaCharlie (Endpoint Detection and Response) and Tines (Security Orchestration, Automation, and Response). The primary objective was to configure and link these platforms to simulate real-time threat detection, response, and remediation. By automating actions such as alerting through communication platforms and endpoint containment, this project highlights the operational benefits of integrating detection and response tools. Ultimately, this hands-on implementation deepened my practical understanding of modern incident response, threat intelligence integration, and the role of automation in security operations and its scaling.
+This project was designed to demonstrate the development and deployment of automated security workflows using LimaCharlie (Endpoint Detection and Response) and Tines (Security Orchestration, Automation, and Response), configuring and linking these platforms to simulate real-time threat detection, response, and remediation. By automating actions such as alerting through communication platforms and endpoint containment, this project highlights the operational benefits of integrating detection and response tools with automation. Ultimately, this hands-on implementation deepened my practical understanding of modern incident response, threat intelligence integration, and the role of automation in security operations and its scaling.
 
 ### Skills Learned
 
