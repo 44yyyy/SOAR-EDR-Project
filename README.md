@@ -2,7 +2,7 @@
 
 ## Objective
 
-This project was designed to demonstrate the development and deployment of automated security workflows using LimaCharlie (Endpoint Detection and Response) and Tines (Security Orchestration, Automation, and Response), configuring and linking these platforms to simulate real-time threat detection and response. By automating actions such as alerting through communication platforms and endpoint containment, this project highlights the operational benefits of integrating detection and response tools with automation. Ultimately, this hands-on implementation deepened my understanding of incident response, threat intelligence, and the role of automation in modern security operations and its role for smooth scaling.
+This project was designed to demonstrate the development and deployment of automated security workflows using LimaCharlie (Endpoint Detection and Response) and Tines (Security Orchestration, Automation, and Response), configuring and linking these platforms to simulate real-time threat detection and response. By automating actions such as alerting through communication platforms and endpoint containment, this project highlights the operational benefits of integrating detection and response tools with automation. Ultimately, this hands-on implementation deepened my understanding of incident response, threat intelligence, and the role of automation in modern security operations.
 
 ### Skills Learned
 
@@ -207,7 +207,7 @@ We do not need to consider the ping and the isolation status because we will not
 
 ## Conclusion
 
-Coming into this project, my knowledge of EDR and SOAR technologies was largely theoretical, coming from studying for courses and certifications. Actually getting to implement these systems, along with connecting them through APIs and designing a complete workflow from detection to response, was really eye-opening and incredibly rewarding. Bridging the gap between abstract concepts and real-world application has now given me a deeper appreciation for how complicated modern security operations and their functions are. This project bolstered my enthusiasm for cybersecurity and desire to keep learning through hands-on experiences, and I definitely will be doing more projects like these in the future. Thank you for reading!
+Coming into this project, my knowledge of EDR and SOAR technologies was largely theoretical, coming from studying for courses and certifications. Actually getting to implement these systems, along with connecting them through APIs and designing a complete workflow from detection to response, was really eye-opening and incredibly rewarding. Bridging the gap between abstract concepts and real-world application deepened my understanding of how really complicated modern security operations and their functions are. This project bolstered my enthusiasm for cybersecurity and desire to keep learning through hands-on experiences, and I definitely will be doing more projects like these in the future. Thank you for reading!
 
 ## Contact
 
